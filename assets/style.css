@@ -86,3 +86,31 @@ header h1 a:hover, header nav ul li a:hover {
     font-size: 24px;
     text-shadow: 0 0 15px rgba(0, 0, 0, 1);
 }
+
+
+/*About Me*/
+
+.about-me {
+    background-color: #525A5A;
+    border-top: 2px solid black;
+    color: var(--tertiary-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutme-h2 h2{
+    padding: 20px;
+    justify-content: center;
+}
+
+.aboutme-img {
+    justify-content: start;
+    align-items:center;
+    background-size: contain;
+    width: 30%;
+}
+
+.aboutme-bio {
+    justify-content: end;
+    width: 70%;
+}
