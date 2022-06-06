@@ -3,6 +3,7 @@
     --primary-color: #35424a;
     --secondary-color: #e8491d;
     --tertiary-color: #ffffff;
+    --quartanary-color: #32CACA;
 }
 
 
@@ -91,26 +92,39 @@ header h1 a:hover, header nav ul li a:hover {
 /*About Me*/
 
 .about-me {
-    background-color: #525A5A;
+    background-color: #424B4B;
     border-top: 2px solid black;
     color: var(--tertiary-color);
-    display: flex;
-    flex-wrap: wrap;
 }
 
-.aboutme-h2 h2{
-    padding: 20px;
+.about-me h2 {
+    padding: 30px 20px;
+    font-size: 36px;
+    display: flex;
     justify-content: center;
+    
+    
+}
+.aboutme-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px;
+    align-items: center;
 }
 
 .aboutme-img {
-    justify-content: start;
-    align-items:center;
     background-size: contain;
-    width: 30%;
+    flex: 1 12%;
+    padding: 15px;
+    
+}
+
+.aboutme-img img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .aboutme-bio {
-    justify-content: end;
-    width: 70%;
+ flex: 1 auto;
 }
