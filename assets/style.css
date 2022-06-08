@@ -118,10 +118,14 @@ header h1 a:hover, header nav ul li a:hover {
     font-size: 20px;
 }
 
+
 .aboutme-img {
     background-size: contain;
+    background-color: var(--primary-color);
     flex: 1 12%;
-    padding: 15px;
+    padding: 3px;
+    border: 3px solid var(--primary-color);
+    border-radius: 15px;
     
 }
 
@@ -173,6 +177,7 @@ header h1 a:hover, header nav ul li a:hover {
 }
 /* Contact Me*/
 
+
 .contact-me {
     background: var(--tertiary-color);
     display: flex;
@@ -192,6 +197,9 @@ header h1 a:hover, header nav ul li a:hover {
     display:flex;
     flex-wrap:wrap;
     flex-direction: row;
+    margin: 20px;
+    border: 5px solid var(--secondary-color);
+    border-radius: 15px;
 }
 
 .social-media {
@@ -252,4 +260,54 @@ header h1 a:hover, header nav ul li a:hover {
     background-color: var(--primary-color);
     padding:20px 35px;
     border-top: 2px solid var(--secondary-color); 
+  }
+
+  /*Media Queries*/
+
+  @media screen and (max-width:980px) {
+    header  {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+      }
+    
+    
+      header nav ul {
+        width: 100%;
+        margin-top: 20px;
+        justify-content: center;
+      }
+    
+      header nav ul li {
+        font-size: 20px;
+      }
+  }
+
+
+  @media screen and (max-width:768px) {
+    section {
+        padding: 30px 15px;
+      }
+  }
+
+  @media screen and (max-width:575px) {
+      header  {
+          display: flex;
+          
+      }
+
+      header h1 {
+          width: 100%;
+      }
+
+      header nav ul li{
+          flex: 0 100%;
+      }
+      .project {
+         flex: 0 100%;
+      }
+
+      .contact button{
+    width: 100%;
+      }
   }
